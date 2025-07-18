@@ -1,0 +1,5 @@
+{
+  "name": "apify-toolkit",
+  "packageManager": "yarn@4.9.2",
+  "private": true
+}
