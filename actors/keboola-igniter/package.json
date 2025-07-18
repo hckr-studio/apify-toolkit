@@ -1,0 +1,21 @@
+{
+  "name": "@hckr_/keboola-igniter",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Aleš Roubíček <ales.roubicek@hckr.studio>",
+  "license": "EUPL-1.2",
+  "description": "This is a keboola Igniter actor.",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@fast-csv/parse": "5.0.0",
+    "apify": "3.4.3"
+  },
+  "devDependencies": {
+    "apify-cli": "0.21.9"
+  },
+  "scripts": {
+    "start": "node ./main.js"
+  }
+}

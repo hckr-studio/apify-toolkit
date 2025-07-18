@@ -1,0 +1,68 @@
+{
+  "$schema": "https://raw.githubusercontent.com/apify/apify-shared-js/master/packages/input_schema/src/schema.json",
+  "title": "upload-to-keboola",
+  "description": "Upload Apify Dataset to Keboola.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "datasetId": {
+      "title": "Apify Dataset ID",
+      "description": "ID of the source Apify Dataset",
+      "type": "string",
+      "editor": "textfield"
+    },
+    "keboolaStack": {
+      "title": "Keboola stack name",
+      "description": "Hostname of the destination Keboola stack",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "import.keboola.com"
+    },
+    "keboolaStorageApiKey": {
+      "title": "Keboola API Key",
+      "description": "API Key to Keboola project where you want to upload the data",
+      "type": "string",
+      "editor": "textfield",
+      "isSecret": true
+    },
+    "bucket": {
+      "title": "Keboola bucket name",
+      "description": "Name of the destination Keboola bucket",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "in.c-apify"
+    },
+    "table": {
+      "title": "Keboola table name",
+      "description": "Name of the destination Keboola table",
+      "type": "string",
+      "editor": "textfield",
+      "prefill": "scrape_results"
+    },
+    "headers": {
+      "title": "Keboola table headers",
+      "description": "Comma separated headers of destination Keboola table. You can leave it blank if your Dataset items have always all properties specified.",
+      "type": "array",
+      "editor": "json"
+    },
+    "batchSize": {
+      "title": "Batch size",
+      "description": "Size of the batch to upload. Dataset will be split into batches if it has more items.",
+      "type": "integer",
+      "editor": "number",
+      "default": 1000,
+      "prefill": 1000
+    },
+    "incremental": {
+      "title": "Incremental load",
+      "description": "If disabled, the target Keboola table is truncated before each import.",
+      "type": "boolean",
+      "editor": "checkbox",
+      "default": true
+    }
+  },
+  "required": [
+    "bucket",
+    "table"
+  ]
+}

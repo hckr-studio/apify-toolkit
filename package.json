@@ -1,5 +1,12 @@
 {
-  "name": "apify-toolkit",
-  "packageManager": "yarn@4.9.2",
-  "private": true
+  "name": "@hckr_/apify-toolkit",
+  "type": "module",
+  "private": true,
+  "author": "Aleš Roubíček <ales.roubicek@hckr.studio>",
+  "license": "EUPL-1.2",
+  "workspaces": [
+    "actors/*",
+    "packages/*"
+  ],
+  "packageManager": "yarn@4.9.2"
 }

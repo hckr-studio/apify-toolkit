@@ -1,0 +1,11 @@
+{
+  "name": "@hckr_/apify-persistent-stats",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Aleš Roubíček <ales.roubicek@hckr.studio>",
+  "license": "EUPL-1.2",
+  "dependencies": {
+    "@thi.ng/atom": "5.3.34",
+    "apify": "3.4.3"
+  }
+}

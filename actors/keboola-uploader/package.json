@@ -1,0 +1,23 @@
+{
+  "name": "@hckr_/keboola-uploader",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Aleš Roubíček <ales.roubicek@hckr.studio>",
+  "license": "EUPL-1.2",
+  "description": "This is a Keboola Uploader actor.",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@fast-csv/format": "5.0.2",
+    "apify": "3.4.3",
+    "byte-size": "9.0.1",
+    "node-gzip": "1.1.2"
+  },
+  "devDependencies": {
+    "apify-cli": "0.21.9"
+  },
+  "scripts": {
+    "start": "node ./src/main.js"
+  }
+}

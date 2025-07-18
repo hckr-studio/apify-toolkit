@@ -1,0 +1,12 @@
+{
+  "actorSpecification": 1,
+  "name": "async-workflow",
+  "title": "Empty JavaScript project",
+  "description": "Empty project in JavaScript.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "meta": {
+    "templateId": "js-empty"
+  },
+  "dockerfile": "./Dockerfile"
+}
