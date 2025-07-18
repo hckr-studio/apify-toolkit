@@ -9,9 +9,9 @@ This actor is generalisation of our custom-made uploaders for many of our projec
 optimizes for speed and reliability.
 
 - gracefully
-  handles [migrations](https://docs.apify.com/academy/expert-scraping-with-apify/migrations-maintaining-state)
+  handles [migrations](https://docs.apify.com/academy/expert-scraping-with-apify/migrations-maintaining-state?fpr=rarous)
 - implements retry policy for failed uploads
-- supports [Actor Integration](https://docs.apify.com/platform/integrations/actors/integration-ready-actors)
+- supports [Actor Integration](https://docs.apify.com/platform/integrations/actors/integration-ready-actors?fpr=rarous)
 - allows to fine tune the batch size for you optimal usage of resources
 
 Your Apify Dataset will be split into batches, converted to CSV and uploaded with gzip compression enabled.
@@ -24,7 +24,7 @@ for JSON](https://docs.snowflake.com/en/user-guide/querying-semistructured) in y
 
 ### Dataset ID
 
-ID of [Apify Dataset](https://docs.apify.com/platform/storage/dataset) that should be uploaded to Keboola.
+ID of [Apify Dataset](https://docs.apify.com/platform/storage/dataset?fpr=rarous) that should be uploaded to Keboola.
 When you use this actor in Integrations workflow, this field is optional. Default Dataset of previous actor in the flow
 will be used.
 
