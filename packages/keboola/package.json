@@ -1,9 +1,14 @@
 {
   "name": "@hckr_/apify-keboola",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "author": "Aleš Roubíček <ales.roubicek@hckr.studio>",
   "license": "EUPL-1.2",
+  "exports": {
+    ".": "./src/index.js",
+    "./hlidac-shopu": "./src/hlidac-shopu/index.js"
+  },
+  "types": "./types.d.ts",
   "dependencies": {
     "@thi.ng/atom": "5.3.34",
     "apify": "3.4.3"
