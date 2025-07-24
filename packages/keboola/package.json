@@ -10,7 +10,7 @@
   },
   "types": "./types.d.ts",
   "dependencies": {
-    "@thi.ng/atom": "5.3.34",
+    "@thi.ng/atom": "5.3.36",
     "apify": "3.4.3"
   }
 }
