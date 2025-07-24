@@ -182,6 +182,69 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dprint/darwin-arm64@npm:0.50.1":
+  version: 0.50.1
+  resolution: "@dprint/darwin-arm64@npm:0.50.1"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@dprint/darwin-x64@npm:0.50.1":
+  version: 0.50.1
+  resolution: "@dprint/darwin-x64@npm:0.50.1"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@dprint/linux-arm64-glibc@npm:0.50.1":
+  version: 0.50.1
+  resolution: "@dprint/linux-arm64-glibc@npm:0.50.1"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@dprint/linux-arm64-musl@npm:0.50.1":
+  version: 0.50.1
+  resolution: "@dprint/linux-arm64-musl@npm:0.50.1"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@dprint/linux-riscv64-glibc@npm:0.50.1":
+  version: 0.50.1
+  resolution: "@dprint/linux-riscv64-glibc@npm:0.50.1"
+  conditions: os=linux & cpu=riscv64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@dprint/linux-x64-glibc@npm:0.50.1":
+  version: 0.50.1
+  resolution: "@dprint/linux-x64-glibc@npm:0.50.1"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@dprint/linux-x64-musl@npm:0.50.1":
+  version: 0.50.1
+  resolution: "@dprint/linux-x64-musl@npm:0.50.1"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@dprint/win32-arm64@npm:0.50.1":
+  version: 0.50.1
+  resolution: "@dprint/win32-arm64@npm:0.50.1"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@dprint/win32-x64@npm:0.50.1":
+  version: 0.50.1
+  resolution: "@dprint/win32-x64@npm:0.50.1"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@fast-csv/format@npm:5.0.2":
   version: 5.0.2
   resolution: "@fast-csv/format@npm:5.0.2"
@@ -195,6 +258,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fast-csv/parse@npm:5.0.0":
+  version: 5.0.0
+  resolution: "@fast-csv/parse@npm:5.0.0"
+  dependencies:
+    lodash.escaperegexp: "npm:^4.1.2"
+    lodash.groupby: "npm:^4.6.0"
+    lodash.isfunction: "npm:^3.0.9"
+    lodash.isnil: "npm:^4.0.0"
+    lodash.isundefined: "npm:^3.0.1"
+    lodash.uniq: "npm:^4.5.0"
+  checksum: 10c0/883ed2355550e8663b5e4cef186e7968269bda23a70e83652781e9d90a47ac7a0f5fcefc1568f1701d0d5235c0fc376f76b3b563013ad66385d18137741435fa
+  languageName: node
+  linkType: hard
+
+"@hckr_/apify-keboola@workspace:packages/keboola":
+  version: 0.0.0-use.local
+  resolution: "@hckr_/apify-keboola@workspace:packages/keboola"
+  dependencies:
+    "@thi.ng/atom": "npm:5.3.34"
+    apify: "npm:3.4.3"
+  languageName: unknown
+  linkType: soft
+
 "@hckr_/apify-persistent-stats@workspace:packages/persistent-stats":
   version: 0.0.0-use.local
   resolution: "@hckr_/apify-persistent-stats@workspace:packages/persistent-stats"
@@ -207,6 +293,8 @@ __metadata:
 "@hckr_/apify-toolkit@workspace:.":
   version: 0.0.0-use.local
   resolution: "@hckr_/apify-toolkit@workspace:."
+  dependencies:
+    dprint: "npm:0.50.1"
   languageName: unknown
   linkType: soft
 
@@ -214,6 +302,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr_/keboola-igniter@workspace:actors/keboola-igniter"
   dependencies:
+    "@fast-csv/parse": "npm:5.0.0"
     apify: "npm:3.4.3"
     apify-cli: "npm:0.21.9"
   languageName: unknown
@@ -1784,6 +1873,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dprint@npm:0.50.1":
+  version: 0.50.1
+  resolution: "dprint@npm:0.50.1"
+  dependencies:
+    "@dprint/darwin-arm64": "npm:0.50.1"
+    "@dprint/darwin-x64": "npm:0.50.1"
+    "@dprint/linux-arm64-glibc": "npm:0.50.1"
+    "@dprint/linux-arm64-musl": "npm:0.50.1"
+    "@dprint/linux-riscv64-glibc": "npm:0.50.1"
+    "@dprint/linux-x64-glibc": "npm:0.50.1"
+    "@dprint/linux-x64-musl": "npm:0.50.1"
+    "@dprint/win32-arm64": "npm:0.50.1"
+    "@dprint/win32-x64": "npm:0.50.1"
+  dependenciesMeta:
+    "@dprint/darwin-arm64":
+      optional: true
+    "@dprint/darwin-x64":
+      optional: true
+    "@dprint/linux-arm64-glibc":
+      optional: true
+    "@dprint/linux-arm64-musl":
+      optional: true
+    "@dprint/linux-riscv64-glibc":
+      optional: true
+    "@dprint/linux-x64-glibc":
+      optional: true
+    "@dprint/linux-x64-musl":
+      optional: true
+    "@dprint/win32-arm64":
+      optional: true
+    "@dprint/win32-x64":
+      optional: true
+  bin:
+    dprint: bin.js
+  checksum: 10c0/8352f9b7f2d071437f4e3d4fa4ed11f95f5e9982201b5a8704c4fad32caef04fbd57f3f8e340305263fa93090fffeb0ad99fddb06322177796d9c23b7e761b0d
+  languageName: node
+  linkType: hard
+
 "dunder-proto@npm:^1.0.1":
   version: 1.0.1
   resolution: "dunder-proto@npm:1.0.1"
@@ -3082,6 +3209,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.groupby@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "lodash.groupby@npm:4.6.0"
+  checksum: 10c0/3d136cad438ad6c3a078984ef60e057a3498b1312aa3621b00246ecb99e8f2c4d447e2815460db7a0b661a4fe4e2eeee96c84cb661a824bad04b6cf1f7bc6e9b
+  languageName: node
+  linkType: hard
+
 "lodash.isboolean@npm:^3.0.3":
   version: 3.0.3
   resolution: "lodash.isboolean@npm:3.0.3"
@@ -3107,6 +3241,20 @@ __metadata:
   version: 4.0.0
   resolution: "lodash.isnil@npm:4.0.0"
   checksum: 10c0/1a410a62eb2e797f077d038c11cbf1ea18ab36f713982849f086f86e050234d69988c76fa18d00278c0947daec67e9ecbc666326b8a06b43e36d3ece813a8120
+  languageName: node
+  linkType: hard
+
+"lodash.isundefined@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "lodash.isundefined@npm:3.0.1"
+  checksum: 10c0/00ca2ae6fc83e10f806769130ee62b5bf419a4aaa52d1a084164b4cf2b2ab1dbf7246e05c72cf0df2ebf4ea38ab565a688c1a7362b54331bb336ea8b492f327f
+  languageName: node
+  linkType: hard
+
+"lodash.uniq@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.uniq@npm:4.5.0"
+  checksum: 10c0/262d400bb0952f112162a320cc4a75dea4f66078b9e7e3075ffbc9c6aa30b3e9df3cf20e7da7d566105e1ccf7804e4fbd7d804eee0b53de05d83f16ffbf41c5e
   languageName: node
   linkType: hard
 
