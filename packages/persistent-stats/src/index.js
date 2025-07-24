@@ -4,6 +4,7 @@ import { Actor, log as parentLog } from "apify";
 const log = parentLog.child({ prefix: "Stats" });
 
 const defaultStats = {
+  ok: 0,
   failed: 0,
 };
 

@@ -10,7 +10,7 @@ yarn add @hckr_/apify-persistent-stats
 
 ## Usage
 
-You can collect statistics during your scrape. They are periadically logged to teh console every 20 seconds. 
+You can collect statistics during your scrape. They are periadically logged to teh console every 20 seconds.
 
 ```js
 import { withPersistedStats } from "@hckr_/apify-persistent-stats";
@@ -19,11 +19,10 @@ import { Actor } from "apify";
 async function main() {
   const stats = await withPersistedStats({
     notFound: 0,
-    forbidden: 0,
+    denied: 0,
     timeout: 0,
-    failed: 0,
   });
-  
+
   async function failedRequestHandler({ request, response }, error) {
     const status = response?.statusCode ?? error.message;
     switch (status) {
@@ -32,7 +31,7 @@ async function main() {
         break;
       case 401:
       case 403:
-        stats.inc("forbidden");
+        stats.inc("denied");
         break;
       case "request timed out after 120 seconds.":
         stats.inc("timeout");
@@ -41,9 +40,8 @@ async function main() {
         stats.inc("failed");
         break;
     }
-  };
+  }
 }
-
 
 await Actor.main(main, { statusMessage: "DONE" });
 ```
@@ -51,5 +49,5 @@ await Actor.main(main, { statusMessage: "DONE" });
 ## Publish package
 
 ```bash
-yarn npm publish --access public  
+yarn npm publish --access public
 ```
