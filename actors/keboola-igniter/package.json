@@ -9,7 +9,7 @@
     "node": ">=22.0.0"
   },
   "dependencies": {
-    "@fast-csv/parse": "5.0.0",
+    "@fast-csv/parse": "5.0.2",
     "apify": "3.4.3"
   },
   "devDependencies": {
