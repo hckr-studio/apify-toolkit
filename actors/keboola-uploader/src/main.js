@@ -15,12 +15,12 @@ async function initBatcher(batchSize, itemCount) {
   });
   return {
     count: batches - currentIndex,
-    * entries() {
+    *entries() {
       while (currentIndex < batches) {
         yield currentIndex++;
       }
-    }
-  }
+    },
+  };
 }
 
 async function main() {
@@ -39,7 +39,7 @@ async function main() {
     keboolaStack: process.env.KEBOOLA_STACK ?? "import.keboola.com",
     batchSize: 1000,
     incremental: true,
-    datasetId: input.payload?.resource?.defaultDatasetId
+    datasetId: input.payload?.resource?.defaultDatasetId,
   }, input);
 
   if (!datasetId && !keboolaStorageApiKey) {
@@ -58,21 +58,23 @@ async function main() {
   const batcher = await initBatcher(batchSize, itemCount);
   const batches = batcher.count;
 
-  log.info(`Got dataset ${datasetId} from actor run https://console.apify.com/organization/${userId}/actors/${actId}/runs/${actRunId}#storage`);
+  log.info(
+    `Got dataset ${datasetId} from actor run https://console.apify.com/organization/${userId}/actors/${actId}/runs/${actRunId}#storage`,
+  );
   log.info(`Uploading ${itemCount} documents in ${batches} ${plural(batches, "batch", "batches")}.`);
 
   for (const currentIndex of batcher.entries()) {
     const data = await dataset.getData({
       limit: batchSize,
       offset: currentIndex * batchSize,
-      skipEmpty: true
+      skipEmpty: true,
     });
     const logger = log.child({ prefix: `KeboolaUploader:Batch#${currentIndex + 1}` });
     await sendData(
       data.items.filter(Boolean),
       { keboolaStorageApiKey, keboolaStack, incremental },
       { bucket, table, headers },
-      logger
+      logger,
     );
   }
 
@@ -82,10 +84,8 @@ async function main() {
     actId,
     actRunId,
     userId,
-    itemsCount: itemCount
+    itemsCount: itemCount,
   });
 }
 
-await Actor.main(main, { statusMessage: "DONE" })
-
-
+await Actor.main(main, { statusMessage: "DONE" });

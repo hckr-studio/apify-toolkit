@@ -1,7 +1,7 @@
-import { File } from "node:buffer";
 import { writeToBuffer } from "@fast-csv/format";
 import byteSize from "byte-size";
 import gzip from "node-gzip";
+import { File } from "node:buffer";
 import { uploadToKeboola } from "./uploadToKeboola.mjs";
 
 const fileName = "data.csv";
@@ -22,7 +22,7 @@ function sleep(time) {
 
 function formatOrdinals(n) {
   const enOrdinalRules = new Intl.PluralRules("en-US", { type: "ordinal" });
-  const suffixes = new Map([["one", "st"], ["two", "nd"], ["few", "rd"], ["other", "th"],]);
+  const suffixes = new Map([["one", "st"], ["two", "nd"], ["few", "rd"], ["other", "th"]]);
   const rule = enOrdinalRules.select(n);
   const suffix = suffixes.get(rule);
   return `${n}${suffix}`;
@@ -46,12 +46,18 @@ async function retry(f, logger) {
 
 export async function sendData(data, keboolaSettings, { bucket, table, headers }, logger) {
   // Serialize complex data as JSON
-  const csvTable = data.map(row => Object.fromEntries(Object.entries(row)
-  .map(([key, value]) => [key, (Array.isArray(value) || typeof value === "object") ? JSON.stringify(value) : value])));
+  const csvTable = data.map(row =>
+    Object.fromEntries(
+      Object.entries(row)
+        .map((
+          [key, value],
+        ) => [key, (Array.isArray(value) || typeof value === "object") ? JSON.stringify(value) : value]),
+    )
+  );
 
   const csv = await writeToBuffer(csvTable, { headers: headers ?? true })
-  .then((b) => gzip.gzip(b))
-  .then((b) => new File([b], `${fileName}.gz`, { type: "application/gzip" }));
+    .then((b) => gzip.gzip(b))
+    .then((b) => new File([b], `${fileName}.gz`, { type: "application/gzip" }));
 
   try {
     logger.info(`Uploading to Keboola table ${bucket}.${table}…`);
