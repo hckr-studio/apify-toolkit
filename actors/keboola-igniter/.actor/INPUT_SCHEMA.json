@@ -1,0 +1,29 @@
+{
+  "title": "Input schema for the keboola-igniter actor.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keboolaIgniter": {
+      "type": "object",
+      "prefill": {
+        "targetActorId": "apify/website-content-crawler"
+      },
+      "editor": "json"
+    },
+    "mapping": {
+      "title": "Mapping module",
+      "type": "string",
+      "description": "Function that will create input for target actor or task. Input is array of objects read from Keboola input table.",
+      "prefill": "export function inputMapping(input) {\n  const getUrlOrFirstValue = x => x.url ?? Object.values(x).at(0);\n  return { startUrls: input.map(getUrlOrFirstValue) };\n}",
+      "editor": "javascript"
+    },
+    "inputTableRecord": {
+      "title": "Input table record",
+      "type": "object",
+      "description": "This field will be set from Keboola integration.",
+      "editor": "hidden"
+    }
+  },
+  "additionalProperties": true,
+  "required": ["mapping", "keboolaIgniter"]
+}

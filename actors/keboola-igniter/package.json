@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fast-csv/parse": "5.0.2",
+    "@hckr_/apify-keboola": "1.1.0",
     "apify": "3.4.3"
   },
   "devDependencies": {

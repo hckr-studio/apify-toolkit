@@ -1,31 +1,40 @@
-import { parseStream } from "@fast-csv/parse";
+import { parseInput } from "@hckr_/apify-keboola/input";
 import { Actor, Dataset, log } from "apify";
 
-async function parseInputUrlsList(inputTableRecord, apifyClient) {
-  const { storeId, key } = inputTableRecord;
+// TODO: move this to separate package as it is general purpose utility
+export async function importModuleFromString(code) {
+  return import(`data:text/javascript;charset=utf-8,${encodeURIComponent(code)}`);
+}
 
-  // Input CSV is usually a large file, so we better read it from stream.
-  // Use apify-client because SDK cannot work with streams.
-  const storeClient = await apifyClient.keyValueStore(storeId);
-  const { value: recordStream } = await storeClient.getRecord(key, {
-    stream: true,
-  });
-  return parseStream(recordStream, { headers: true });
+async function getInputMappingFn(mapping) {
+  const getUrlOrFirstValue = x => x.url ?? Object.values(x).at(0);
+  const defaultMapping = input => ({ startUrls: input.map(getUrlOrFirstValue) });
+  const { inputMapping } = typeof mapping === "string"
+    ? (await importModuleFromString(mapping))
+    : {
+      inputMapping(input) {
+        return defaultMapping(input);
+      },
+    };
+  return typeof inputMapping === "function" ? inputMapping : defaultMapping;
 }
 
 async function main() {
   const input = await Actor.getInput();
-  const { keboolaIgniter, inputTableRecord, ...rest } = input;
+  const { keboolaIgniter, inputTableRecord, mapping, ...rest } = input;
+  if (!keboolaIgniter?.targetActorId) {
+    throw new Error("Required property keboolaIgniter.targetActorId is not defined. There is nothing to do.");
+  }
   const { targetActorId } = keboolaIgniter;
   const apifyClient = Actor.newClient();
 
-  const parser = await parseInputUrlsList(inputTableRecord, apifyClient);
-  // TODO: read CSV stream imput and put it into Input of target actor
-
+  const inputMapping = await getInputMappingFn(mapping);
+  const parsedInput = await parseInput(inputTableRecord, apifyClient);
+  const mappedInput = inputMapping(parsedInput);
   const targetActor = apifyClient.actor(targetActorId);
-  const targetActorRun = await targetActor.start(rest);
+  const targetActorRun = await targetActor.start(Object.assign({}, rest, mappedInput));
 
-  log.info("Async run started", targetActorRun);
+  log.info(`Async run of ${targetActorId} started.`, targetActorRun);
 
   await Dataset.pushData({
     runStartDate: new Date().toISOString(),
