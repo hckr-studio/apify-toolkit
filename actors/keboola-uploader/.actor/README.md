@@ -86,11 +86,15 @@ Default is enabled (`true`).
 
 ## SDK
 
-You can also use this actor from custom actors via `@hckr_/apify-keboola` npm package.
+You can also use this actor from yours custom actors via `@hckr_/apify-keboola` npm package.
+
+### Install
 
 ```shell
 npm install @hckr_/apify-keboola
 ```
+
+### Usage
 
 You can use free (pay per usage) variant:
 
@@ -98,7 +102,7 @@ You can use free (pay per usage) variant:
 import { uploadToKeboola } from "@hckr_/apify-keboola";
 ```
 
-Or you can support our work on https://www.hlidacshopu.cz/ with the paid option:
+Or you can support our work on https://www.hlidacshopu.cz/ with the [paid option](https://apify.com/hlidac-shopu/keboola-uploader?fpr=rarous):
 
 ```javascript
 import { uploadToKeboola } from "@hckr_/apify-keboola/hlidac-shopu";

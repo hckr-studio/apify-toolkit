@@ -2,6 +2,7 @@ import { writeToBuffer } from "@fast-csv/format";
 import byteSize from "byte-size";
 import gzip from "node-gzip";
 import { File } from "node:buffer";
+import { setTimeout as sleep } from "node:timers/promises";
 import { uploadToKeboola } from "./uploadToKeboola.mjs";
 
 const fileName = "data.csv";
@@ -14,10 +15,6 @@ async function collectError(resp) {
     const err = await resp.text();
     return new Error(err);
   }
-}
-
-function sleep(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
 }
 
 function formatOrdinals(n) {
