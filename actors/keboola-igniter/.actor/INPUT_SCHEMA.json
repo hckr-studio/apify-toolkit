@@ -5,6 +5,7 @@
   "properties": {
     "keboolaIgniter": {
       "title": "Keboola Igniter input",
+      "description": "JSON object with targetActorId to run. This object will not be passed down to the target actor input.",
       "type": "object",
       "prefill": {
         "targetActorId": "apify/website-content-crawler"
@@ -14,7 +15,7 @@
     "mapping": {
       "title": "Mapping module",
       "type": "string",
-      "description": "Function that will create input for target actor or task. Input is array of objects read from Keboola input table.",
+      "description": "Function that will create input for target actor or task. Parameter input is an array of objects read from Keboola input table.",
       "prefill": "export function inputMapping(input) {\n  const getUrlOrFirstValue = x => x.url ?? Object.values(x).at(0);\n  return { startUrls: input.map(getUrlOrFirstValue) };\n}",
       "editor": "javascript"
     },
