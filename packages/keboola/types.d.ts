@@ -1,4 +1,9 @@
-type KeboolaStack =
+export type InputTableRecord = {
+  storeId: string;
+  key: string;
+};
+
+export type KeboolaStack =
   | "import.keboola.com"
   | "import.us-east4.gcp.keboola.com"
   | "import.eu-central-1.keboola.com"
@@ -6,7 +11,7 @@ type KeboolaStack =
   | "import.europe-west3.gcp.keboola.com"
   | string;
 
-type UploaderInput = {
+export type UploaderInput = {
   datasetId?: string;
   keboolaStorageApiKey?: string;
   keboolaStack?: KeboolaStack;

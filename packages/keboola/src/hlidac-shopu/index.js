@@ -1,6 +1,6 @@
-import { bindActor } from "../index.js";
+import { bindActor } from "../uploader.js";
 
-/** @typedef { import("apify").ApifyEnv } ApifyEnv */
-/** @typedef { import("apify").ActorRun } ActorRun */
-
+/**
+ * @type {function(UploaderInput): Promise<void>}
+ */
 export const uploadToKeboola = bindActor("hlidac-shopu/keboola-uploader");

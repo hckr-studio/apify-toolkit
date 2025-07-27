@@ -1,15 +1,20 @@
 {
   "name": "@hckr_/apify-keboola",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "type": "module",
   "author": "Aleš Roubíček <ales.roubicek@hckr.studio>",
   "license": "EUPL-1.2",
   "exports": {
     ".": "./src/index.js",
-    "./hlidac-shopu": "./src/hlidac-shopu/index.js"
+    "./hlidac-shopu": "./src/hlidac-shopu/index.js",
+    "./input": "./src/input.js",
+    "./input.js": "./src/input.js",
+    "./uploader": "./src/uploader.js",
+    "./uploader.js": "./src/uploader.js"
   },
   "types": "./types.d.ts",
   "dependencies": {
+    "@fast-csv/parse": "5.0.2",
     "@thi.ng/atom": "5.3.36",
     "apify": "3.4.3"
   }

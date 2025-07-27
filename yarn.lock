@@ -276,6 +276,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr_/apify-keboola@workspace:packages/keboola"
   dependencies:
+    "@fast-csv/parse": "npm:5.0.2"
     "@thi.ng/atom": "npm:5.3.36"
     apify: "npm:3.4.3"
   languageName: unknown
