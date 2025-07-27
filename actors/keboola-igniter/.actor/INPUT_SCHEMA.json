@@ -4,6 +4,7 @@
   "schemaVersion": 1,
   "properties": {
     "keboolaIgniter": {
+      "title": "Keboola Igniter input",
       "type": "object",
       "prefill": {
         "targetActorId": "apify/website-content-crawler"
