@@ -278,7 +278,7 @@ __metadata:
   dependencies:
     "@fast-csv/parse": "npm:5.0.2"
     "@thi.ng/atom": "npm:5.3.36"
-    apify: "npm:3.4.3"
+    apify: "npm:3.4.4"
   languageName: unknown
   linkType: soft
 
@@ -287,7 +287,7 @@ __metadata:
   resolution: "@hckr_/apify-persistent-stats@workspace:packages/persistent-stats"
   dependencies:
     "@thi.ng/atom": "npm:5.3.36"
-    apify: "npm:3.4.3"
+    apify: "npm:3.4.4"
   languageName: unknown
   linkType: soft
 
@@ -305,7 +305,7 @@ __metadata:
   dependencies:
     "@fast-csv/parse": "npm:5.0.2"
     "@hckr_/apify-keboola": "npm:1.1.0"
-    apify: "npm:3.4.3"
+    apify: "npm:3.4.4"
     apify-cli: "npm:0.21.9"
   languageName: unknown
   linkType: soft
@@ -315,7 +315,7 @@ __metadata:
   resolution: "@hckr_/keboola-uploader@workspace:actors/keboola-uploader"
   dependencies:
     "@fast-csv/format": "npm:5.0.2"
-    apify: "npm:3.4.3"
+    apify: "npm:3.4.4"
     apify-cli: "npm:0.21.9"
     byte-size: "npm:9.0.1"
     node-gzip: "npm:1.1.2"
@@ -1089,9 +1089,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apify@npm:3.4.3":
-  version: 3.4.3
-  resolution: "apify@npm:3.4.3"
+"apify@npm:3.4.4":
+  version: 3.4.4
+  resolution: "apify@npm:3.4.4"
   dependencies:
     "@apify/consts": "npm:^2.23.0"
     "@apify/input_secrets": "npm:^1.2.0"
@@ -1107,7 +1107,7 @@ __metadata:
     semver: "npm:^7.5.4"
     tslib: "npm:^2.6.2"
     ws: "npm:^8.18.0"
-  checksum: 10c0/d041c39aaf54b44142e081f3e1c987a149d910bc645c7f67254fff335ea7a08cd130f0c4860ec08a8d2448f87cdd43c6a2af2b30861c6e2d3d56cf5def1a9d36
+  checksum: 10c0/64db0b0ac1d6e8d66e8090decc170e938ac1eef373350e8d170618e04c149ec8928969736385c1d96c3707bcdc9acfae8dbd7adf5ade9623419a4bd93f922add
   languageName: node
   linkType: hard
 
