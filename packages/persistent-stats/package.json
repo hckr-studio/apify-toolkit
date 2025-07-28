@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "@thi.ng/atom": "5.3.36",
-    "apify": "3.4.3"
+    "apify": "3.4.4"
   }
 }

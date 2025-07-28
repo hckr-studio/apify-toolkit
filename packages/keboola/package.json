@@ -16,6 +16,6 @@
   "dependencies": {
     "@fast-csv/parse": "5.0.2",
     "@thi.ng/atom": "5.3.36",
-    "apify": "3.4.3"
+    "apify": "3.4.4"
   }
 }
