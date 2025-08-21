@@ -14,7 +14,7 @@
   },
   "types": "./types.d.ts",
   "dependencies": {
-    "@fast-csv/parse": "5.0.2",
+    "@fast-csv/parse": "5.0.5",
     "@thi.ng/atom": "5.3.36",
     "apify": "3.4.3"
   }
