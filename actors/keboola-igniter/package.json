@@ -9,7 +9,7 @@
     "node": ">=22.0.0"
   },
   "dependencies": {
-    "@fast-csv/parse": "5.0.2",
+    "@fast-csv/parse": "5.0.5",
     "@hckr_/apify-keboola": "1.1.0",
     "apify": "3.4.4"
   },
