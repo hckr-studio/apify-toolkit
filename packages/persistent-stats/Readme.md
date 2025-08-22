@@ -1,6 +1,6 @@
 # apify-persistent-stats
 
-Library for collecting Stats in Apify runs. Stats are persisted and work reliable between actor migrations.
+Library for collecting Stats in [Apify Actor](https://apify.com/?fpr=rarous) runs. Stats are persisted and work reliable between actor migrations.
 
 ## Install package
 
