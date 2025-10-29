@@ -6,7 +6,7 @@
   "license": "EUPL-1.2",
   "description": "This is a keboola Igniter actor.",
   "engines": {
-    "node": ">=22.0.0"
+    "node": "25.1.0"
   },
   "dependencies": {
     "@fast-csv/parse": "5.0.5",

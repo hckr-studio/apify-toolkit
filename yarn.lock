@@ -313,7 +313,8 @@ __metadata:
   resolution: "@hckr_/apify-persistent-stats@workspace:packages/persistent-stats"
   dependencies:
     "@thi.ng/atom": "npm:5.3.41"
-    apify: "npm:3.4.4"
+  peerDependencies:
+    apify: 3.5.1
   languageName: unknown
   linkType: soft
 

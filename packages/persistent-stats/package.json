@@ -11,6 +11,6 @@
     "@thi.ng/atom": "5.3.41"
   },
   "peerDependencies": {
-    "apify": ">=3.0.0"
+    "apify": "3.5.1"
   }
 }
