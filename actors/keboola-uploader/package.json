@@ -6,7 +6,7 @@
   "license": "EUPL-1.2",
   "description": "This is a Keboola Uploader actor.",
   "engines": {
-    "node": ">=22.0.0"
+    "node": "v25.8.2"
   },
   "dependencies": {
     "@fast-csv/format": "5.0.5",
