@@ -15,7 +15,7 @@
   "types": "./types.d.ts",
   "dependencies": {
     "@fast-csv/parse": "5.0.5",
-    "@thi.ng/atom": "5.3.48"
+    "@thi.ng/atom": "5.3.58"
   },
   "peerDependecies": {
     "apify": ">=3.0.0"
