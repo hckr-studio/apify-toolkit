@@ -10,6 +10,6 @@
   ],
   "packageManager": "yarn@4.10.3",
   "devDependencies": {
-    "dprint": "0.50.2"
+    "dprint": "0.53.0"
   }
 }
