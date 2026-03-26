@@ -18,6 +18,21 @@ yarn add @hckr_/apify-keboola
 
 ```javascript
 import { parseInput } from "@hckr_/apify-keboola";
+import { Actor, log } from "apify";
+
+async function main() {
+  const apifyClient = Actor.newClient();
+  const { inputTableRecord } = await Actor.getInput();
+  log.info("Loading URLs from input table", {
+    inputTableRecord,
+    url: `https://api.apify.com/v2/key-value-stores/${inputTableRecord.storeId}/records/${inputTableRecord.key}`
+  });
+  const rows = await parseInput(inputTableRecord, apifyClient);
+  
+  // TODO: setup and run crawler
+}
+
+await Actor.main(main);
 ```
 
 ## Uploader
