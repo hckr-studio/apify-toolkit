@@ -1,6 +1,6 @@
 {
   "name": "@hckr_/apify-persistent-stats",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "author": "Aleš Roubíček <ales.roubicek@hckr.studio>",
   "license": "EUPL-1.2",
