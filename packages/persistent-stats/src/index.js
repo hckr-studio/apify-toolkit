@@ -50,7 +50,7 @@ export class Stats {
     await Actor.setValue("STATS", stats);
     log.info("saved");
     if (stats.ok) {
-      log.info(`Denied ratio: ${(stats.denied ?? 0 / stats.ok) * 100} %`);
+      log.info(`Denied ratio: ${((stats.denied ?? 0) / stats.ok) * 100} %`);
     }
     this.log();
   }
