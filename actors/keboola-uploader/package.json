@@ -5,9 +5,6 @@
   "author": "Aleš Roubíček <ales.roubicek@hckr.studio>",
   "license": "EUPL-1.2",
   "description": "This is a Keboola Uploader actor.",
-  "engines": {
-    "node": "v25.8.2"
-  },
   "dependencies": {
     "@fast-csv/format": "5.0.5",
     "apify": "3.7.0",

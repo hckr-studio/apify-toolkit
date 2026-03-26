@@ -5,9 +5,6 @@
   "author": "Aleš Roubíček <ales.roubicek@hckr.studio>",
   "license": "EUPL-1.2",
   "description": "This is a keboola Igniter actor.",
-  "engines": {
-    "node": "v25.8.2"
-  },
   "dependencies": {
     "@fast-csv/parse": "5.0.5",
     "@hckr_/apify-keboola": "1.1.1",
