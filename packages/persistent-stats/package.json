@@ -8,7 +8,7 @@
     ".": "./src/index.js"
   },
   "dependencies": {
-    "@thi.ng/atom": "5.3.59"
+    "@thi.ng/atom": "5.3.60"
   },
   "peerDependencies": {
     "apify": "3.7.0"
