@@ -521,7 +521,7 @@ __metadata:
     "@fast-csv/parse": "npm:5.0.5"
     "@hckr_/apify-keboola": "npm:1.1.1"
     apify: "npm:3.7.1"
-    apify-cli: "npm:1.6.0"
+    apify-cli: "npm:1.6.1"
   languageName: unknown
   linkType: soft
 
@@ -531,7 +531,7 @@ __metadata:
   dependencies:
     "@fast-csv/format": "npm:5.0.5"
     apify: "npm:3.7.1"
-    apify-cli: "npm:1.6.0"
+    apify-cli: "npm:1.6.1"
     byte-size: "npm:9.0.1"
     node-gzip: "npm:1.1.2"
   languageName: unknown
@@ -1074,9 +1074,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apify-cli@npm:1.6.0":
-  version: 1.6.0
-  resolution: "apify-cli@npm:1.6.0"
+"apify-cli@npm:1.6.1":
+  version: 1.6.1
+  resolution: "apify-cli@npm:1.6.1"
   dependencies:
     "@apify/actor-memory-expression": "npm:^0.1.12"
     "@apify/actor-templates": "npm:^0.1.5"
@@ -1133,7 +1133,7 @@ __metadata:
     actor: dist/actor.js
     apify: dist/apify.js
     apify-cli: dist/apify.js
-  checksum: 10c0/82d9938cdf39b5e64d0d6da2fd3484b1eb0efa0a902b0db7a34e47f8131bf2a862b9f6008c05a9adefbbb41043e9297f871a907975ec9a3554b1932ff92a7b35
+  checksum: 10c0/7ce64715bf2268ebf81e8916dc7fce6bd28599af5f1c15f7b257c0f50e17ade97540b49b69434ee95432d75043be50ba0537abbf2a27a9e314d8921440c7cc51
   languageName: node
   linkType: hard
 
