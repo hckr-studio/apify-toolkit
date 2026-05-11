@@ -496,7 +496,7 @@ __metadata:
   dependencies:
     "@thi.ng/atom": "npm:5.3.63"
   peerDependencies:
-    apify: 3.7.1
+    apify: 3.7.2
   languageName: unknown
   linkType: soft
 
@@ -514,7 +514,7 @@ __metadata:
   dependencies:
     "@fast-csv/parse": "npm:5.0.7"
     "@hckr_/apify-keboola": "npm:1.1.1"
-    apify: "npm:3.7.1"
+    apify: "npm:3.7.2"
     apify-cli: "npm:1.6.1"
   languageName: unknown
   linkType: soft
@@ -524,7 +524,7 @@ __metadata:
   resolution: "@hckr_/keboola-uploader@workspace:actors/keboola-uploader"
   dependencies:
     "@fast-csv/format": "npm:5.0.7"
-    apify: "npm:3.7.1"
+    apify: "npm:3.7.2"
     apify-cli: "npm:1.6.1"
     byte-size: "npm:9.0.1"
     node-gzip: "npm:1.1.2"
@@ -1170,9 +1170,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apify@npm:3.7.1":
-  version: 3.7.1
-  resolution: "apify@npm:3.7.1"
+"apify@npm:3.7.2":
+  version: 3.7.2
+  resolution: "apify@npm:3.7.2"
   dependencies:
     "@apify/consts": "npm:^2.51.0"
     "@apify/input_secrets": "npm:^1.2.0"
@@ -1188,7 +1188,7 @@ __metadata:
     semver: "npm:^7.5.4"
     tslib: "npm:^2.6.2"
     ws: "npm:^8.18.0"
-  checksum: 10c0/896a0edd77726b330432b86b9e37fb859a31569019629cb817b18fede3b07349528b5d6fa24c37a917f71b336eb766b75648c2733e84bf353d0f840a09d1339a
+  checksum: 10c0/bf36afdcc8c1af917218937f90b2a62ea9fd0f79d287f2e38ef615a999bdc958f1c519cc2e713abe842c837af0bdd2ade0fa0a08acaeceb3c60069b9ce6b6e94
   languageName: node
   linkType: hard
 
