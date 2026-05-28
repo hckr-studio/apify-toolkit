@@ -486,7 +486,7 @@ __metadata:
   resolution: "@hckr_/apify-keboola@workspace:packages/keboola"
   dependencies:
     "@fast-csv/parse": "npm:5.0.7"
-    "@thi.ng/atom": "npm:5.3.63"
+    "@thi.ng/atom": "npm:5.3.66"
   languageName: unknown
   linkType: soft
 
@@ -494,7 +494,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr_/apify-persistent-stats@workspace:packages/persistent-stats"
   dependencies:
-    "@thi.ng/atom": "npm:5.3.63"
+    "@thi.ng/atom": "npm:5.3.66"
   peerDependencies:
     apify: 3.7.2
   languageName: unknown
@@ -795,54 +795,54 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@thi.ng/api@npm:^8.12.22":
-  version: 8.12.22
-  resolution: "@thi.ng/api@npm:8.12.22"
-  checksum: 10c0/55c3498f2f01986b9960dc29c923a70069b9d5f5c9a4215494b8a962ab62d1b72058a504ff3a4dbecbcc42e6e8507281765b7257ae6c6cf76c596474efd93c97
+"@thi.ng/api@npm:^8.12.25":
+  version: 8.12.25
+  resolution: "@thi.ng/api@npm:8.12.25"
+  checksum: 10c0/31429db634a58a68dc4df5085794ff922e4e00df0dac044bb4b8c31894b9865e05a4a5645d06bc185f80570fda53bf87762219efcc9a258bb6fc395bb35fbd6f
   languageName: node
   linkType: hard
 
-"@thi.ng/atom@npm:5.3.63":
-  version: 5.3.63
-  resolution: "@thi.ng/atom@npm:5.3.63"
+"@thi.ng/atom@npm:5.3.66":
+  version: 5.3.66
+  resolution: "@thi.ng/atom@npm:5.3.66"
   dependencies:
-    "@thi.ng/api": "npm:^8.12.22"
-    "@thi.ng/equiv": "npm:^2.1.111"
-    "@thi.ng/errors": "npm:^2.6.11"
-    "@thi.ng/paths": "npm:^5.2.41"
-  checksum: 10c0/b83381887b51532db368636865a11a4edc6eace8e0e9baa90e0faeae0895860d2da5e74ff58b595f641f984eacdefe857ce10603befd1f3bb64a4fb2d5863c5e
+    "@thi.ng/api": "npm:^8.12.25"
+    "@thi.ng/equiv": "npm:^2.1.114"
+    "@thi.ng/errors": "npm:^2.6.14"
+    "@thi.ng/paths": "npm:^5.2.44"
+  checksum: 10c0/62d6500acd75d1933d15737cb91e96041eccb47baba5386932d7456d5915ad9eb75af0555e9f4b594fc8eef490dcf9e08bfc522803235eaab508c505968920a1
   languageName: node
   linkType: hard
 
-"@thi.ng/checks@npm:^3.9.2":
-  version: 3.9.2
-  resolution: "@thi.ng/checks@npm:3.9.2"
-  checksum: 10c0/445e796b3932f58ba62e397cd11ebb971b8503b912a99187aa824b09e999fcc5b7a5503bcfb980c9745d106591965e4a5cc4aa35e022cd2993a5a340d6069dc9
+"@thi.ng/checks@npm:^3.9.5":
+  version: 3.9.5
+  resolution: "@thi.ng/checks@npm:3.9.5"
+  checksum: 10c0/dfec35f1165a655ecb1a24539ac8780da6afdbbff2bebeddfb67cf43d9b9e9da37f0087aba6e378570fefbca185889fa01a8bce3b12288249e07580540ac9a15
   languageName: node
   linkType: hard
 
-"@thi.ng/equiv@npm:^2.1.111":
-  version: 2.1.111
-  resolution: "@thi.ng/equiv@npm:2.1.111"
-  checksum: 10c0/2570cb5e9553835b910cddd816171438984d8972578f6daac2044cdab86eec8d64bd767e629d57f1f7f10e6f107b13ed893939462c5f97a7e24f3026d3d0fa16
+"@thi.ng/equiv@npm:^2.1.114":
+  version: 2.1.114
+  resolution: "@thi.ng/equiv@npm:2.1.114"
+  checksum: 10c0/89bc62bc9665e95f9d543f6509f6f241222c5907277c6cdaa2c44327e63cdf07f36c76309eac9a8d9415e0aa0b28a6f8b0af52bbd0df1a3d232193c3a0fb3080
   languageName: node
   linkType: hard
 
-"@thi.ng/errors@npm:^2.6.11":
-  version: 2.6.11
-  resolution: "@thi.ng/errors@npm:2.6.11"
-  checksum: 10c0/c4837eef5c71d5688e9deee70fd123263676d4a3b6ce47ee55e054c7108c89512abd328bed272dcc8a2ddfe291ea89b127908c6d758797d31ae5545127188d61
+"@thi.ng/errors@npm:^2.6.14":
+  version: 2.6.14
+  resolution: "@thi.ng/errors@npm:2.6.14"
+  checksum: 10c0/af3d751387181a544c9d6bd6fd130563267a62f975979b8f9d34110a73c1dda3503f2bb1827dba37527d3906b08eacc4cc79218336d47826d9f93f2b4bd29632
   languageName: node
   linkType: hard
 
-"@thi.ng/paths@npm:^5.2.41":
-  version: 5.2.41
-  resolution: "@thi.ng/paths@npm:5.2.41"
+"@thi.ng/paths@npm:^5.2.44":
+  version: 5.2.44
+  resolution: "@thi.ng/paths@npm:5.2.44"
   dependencies:
-    "@thi.ng/api": "npm:^8.12.22"
-    "@thi.ng/checks": "npm:^3.9.2"
-    "@thi.ng/errors": "npm:^2.6.11"
-  checksum: 10c0/2e8b864ffa1d632d6e9a0315e5fd1f5e26699806fca12a8fbbe6d381c3d202b0f0d1cc7d93be805ab897d9053c2b29d088952d333717aac71c968b509451b658
+    "@thi.ng/api": "npm:^8.12.25"
+    "@thi.ng/checks": "npm:^3.9.5"
+    "@thi.ng/errors": "npm:^2.6.14"
+  checksum: 10c0/97eec38f52fd55884aa8e94e87c49bb4b0639bbe31d232f405138689449cd47e28c00686d16b2a58f5137879910b0f001b3b242e9be2dac79a8b1d8d74a21516
   languageName: node
   linkType: hard
 
