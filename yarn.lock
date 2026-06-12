@@ -76,6 +76,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@apify/consts@npm:^2.53.3":
+  version: 2.53.3
+  resolution: "@apify/consts@npm:2.53.3"
+  checksum: 10c0/5fc7caa5d907a998ce38b8767b6f293b6da32cfb32d6dbda2e9e2f760224717bda94f7ab7c5c2c2d07ad322bee9552eb54fcb3ca347e120f98860e1550eaef86
+  languageName: node
+  linkType: hard
+
 "@apify/datastructures@npm:^2.0.0":
   version: 2.0.3
   resolution: "@apify/datastructures@npm:2.0.3"
@@ -120,13 +127,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apify/json_schemas@npm:^0.13.0":
-  version: 0.13.0
-  resolution: "@apify/json_schemas@npm:0.13.0"
+"@apify/json_schemas@npm:^0.16.0":
+  version: 0.16.9
+  resolution: "@apify/json_schemas@npm:0.16.9"
   dependencies:
-    "@apify/consts": "npm:^2.51.0"
+    "@apify/consts": "npm:^2.53.3"
     ajv: "npm:^8.17.1"
-  checksum: 10c0/2612be7a73802b810c0bf82fc45ee8a5e3488b94303a66b66af1b13b8dc0b8aa8b4ca88e63fb7340fd9e82f6fa27f3b0d2ab66d51578b4a351ba47f6358887a4
+  checksum: 10c0/ba4ab76ef417307726bfe56aabf2c2c593628f6fd71fa691fe1d2c75960ed75d70362a0af19ac17a8c7864928069bd5d4d65a2998a9992f384175ee7e5be405a
   languageName: node
   linkType: hard
 
@@ -515,7 +522,7 @@ __metadata:
     "@fast-csv/parse": "npm:5.0.7"
     "@hckr_/apify-keboola": "npm:1.1.1"
     apify: "npm:3.7.2"
-    apify-cli: "npm:1.6.1"
+    apify-cli: "npm:1.6.2"
   languageName: unknown
   linkType: soft
 
@@ -525,7 +532,7 @@ __metadata:
   dependencies:
     "@fast-csv/format": "npm:5.0.7"
     apify: "npm:3.7.2"
-    apify-cli: "npm:1.6.1"
+    apify-cli: "npm:1.6.2"
     byte-size: "npm:9.0.1"
     node-gzip: "npm:1.1.2"
   languageName: unknown
@@ -993,7 +1000,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^8.17.1":
+"ajv@npm:^8.17.1, ajv@npm:~8.20.0":
   version: 8.20.0
   resolution: "ajv@npm:8.20.0"
   dependencies:
@@ -1002,18 +1009,6 @@ __metadata:
     json-schema-traverse: "npm:^1.0.0"
     require-from-string: "npm:^2.0.2"
   checksum: 10c0/5df9a1c8f83863cde1bd3a9ddb426f599718f88e3dc9153616c79fb28e0be455335830d7f21d745576519f057b371352daa31047b6a33d7036fe08777d60cf2a
-  languageName: node
-  linkType: hard
-
-"ajv@npm:~8.18.0":
-  version: 8.18.0
-  resolution: "ajv@npm:8.18.0"
-  dependencies:
-    fast-deep-equal: "npm:^3.1.3"
-    fast-uri: "npm:^3.0.1"
-    json-schema-traverse: "npm:^1.0.0"
-    require-from-string: "npm:^2.0.2"
-  checksum: 10c0/e7517c426173513a07391be951879932bdf3348feaebd2199f5b901c20f99d60db8cd1591502d4d551dc82f594e82a05c4fe1c70139b15b8937f7afeaed9532f
   languageName: node
   linkType: hard
 
@@ -1068,15 +1063,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apify-cli@npm:1.6.1":
-  version: 1.6.1
-  resolution: "apify-cli@npm:1.6.1"
+"apify-cli@npm:1.6.2":
+  version: 1.6.2
+  resolution: "apify-cli@npm:1.6.2"
   dependencies:
     "@apify/actor-memory-expression": "npm:^0.1.12"
     "@apify/actor-templates": "npm:^0.1.5"
     "@apify/consts": "npm:^2.53.0"
     "@apify/input_schema": "npm:^3.27.1"
-    "@apify/json_schemas": "npm:^0.13.0"
+    "@apify/json_schemas": "npm:^0.16.0"
     "@apify/utilities": "npm:^2.25.6"
     "@crawlee/memory-storage": "npm:^3.16.0"
     "@inquirer/core": "npm:^11.1.7"
@@ -1089,8 +1084,8 @@ __metadata:
     "@sapphire/timestamp": "npm:^1.0.5"
     "@skyra/jaro-winkler": "npm:^1.1.1"
     adm-zip: "npm:~0.5.17"
-    ajv: "npm:~8.18.0"
-    apify-client: "npm:^2.22.3"
+    ajv: "npm:~8.20.0"
+    apify-client: "npm:^2.23.3"
     archiver: "npm:~7.0.1"
     axios: "npm:^1.15.0"
     chalk: "npm:~5.6.2"
@@ -1115,7 +1110,7 @@ __metadata:
     mime: "npm:~4.1.0"
     open: "npm:~11.0.0"
     rimraf: "npm:~6.1.3"
-    semver: "npm:~7.7.4"
+    semver: "npm:~7.8.0"
     string-width: "npm:^8.2.0"
     strip-ansi: "npm:^7.2.0"
     tiged: "npm:~2.12.7"
@@ -1127,7 +1122,7 @@ __metadata:
     actor: dist/actor.js
     apify: dist/apify.js
     apify-cli: dist/apify.js
-  checksum: 10c0/7ce64715bf2268ebf81e8916dc7fce6bd28599af5f1c15f7b257c0f50e17ade97540b49b69434ee95432d75043be50ba0537abbf2a27a9e314d8921440c7cc51
+  checksum: 10c0/1ebe4216b50c1a069538aaf5c1e69103507697aa1f6be630c42aa9f73e86a596a550a5058068833737ff08f8532adf4adff8e892a586e5aa246546f6c71551f3
   languageName: node
   linkType: hard
 
@@ -1150,9 +1145,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apify-client@npm:^2.22.3":
-  version: 2.23.1
-  resolution: "apify-client@npm:2.23.1"
+"apify-client@npm:^2.23.3":
+  version: 2.23.4
+  resolution: "apify-client@npm:2.23.4"
   dependencies:
     "@apify/consts": "npm:^2.50.0"
     "@apify/log": "npm:^2.2.6"
@@ -1160,13 +1155,13 @@ __metadata:
     "@crawlee/types": "npm:^3.3.0"
     ansi-colors: "npm:^4.1.1"
     async-retry: "npm:^1.3.3"
-    axios: "npm:^1.6.7"
+    axios: "npm:^1.16.0"
     content-type: "npm:^1.0.5"
     ow: "npm:^0.28.2"
     proxy-agent: "npm:^6.5.0"
     tslib: "npm:^2.5.0"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/91ecdf80813d40202697bb62105fe53357af8d8424aeea496e59037f2a7bd254382b38bb43243675258ea1753bd3e57a86be479ef4008472fae9865696856baf
+  checksum: 10c0/b6a1a8abc85d00ea5af55d097bdc6c8d33a9edd0d96e1c776585f6536d0327b67285fd6b5131298a40f179546a7ee1cb9d08e6d7be110b123c649200e6054846
   languageName: node
   linkType: hard
 
@@ -1269,6 +1264,18 @@ __metadata:
     form-data: "npm:^4.0.5"
     proxy-from-env: "npm:^2.1.0"
   checksum: 10c0/4eeae0feeaa7fdc1ef24f81f8b378fdadedf4aebdd6bf224484675160f8744cf17b9b0d1c215279979940f7e8ce463beffa2f713099612e428eac238515c81d5
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.16.0":
+  version: 1.17.0
+  resolution: "axios@npm:1.17.0"
+  dependencies:
+    follow-redirects: "npm:^1.16.0"
+    form-data: "npm:^4.0.5"
+    https-proxy-agent: "npm:^5.0.1"
+    proxy-from-env: "npm:^2.1.0"
+  checksum: 10c0/c4fa19ff3a3a63bde48beec03ad816b133b9a6385cccffffe172577ab18c6a70e299280d57f12c80c867fe25df41f92cb91d3a8258708a6d2be3e9e085f92650
   languageName: node
   linkType: hard
 
@@ -2382,7 +2389,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.11":
+"follow-redirects@npm:^1.15.11, follow-redirects@npm:^1.16.0":
   version: 1.16.0
   resolution: "follow-redirects@npm:1.16.0"
   peerDependenciesMeta:
@@ -2821,6 +2828,16 @@ __metadata:
     agent-base: "npm:6"
     debug: "npm:4"
   checksum: 10c0/670c04f7f0effb5a449c094ea037cbcfb28a5ab93ed22e8c343095202cc7288027869a5a21caf4ee3b8ea06f9624ef1e1fc9044669c0fd92617654ff39f30806
+  languageName: node
+  linkType: hard
+
+"https-proxy-agent@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "https-proxy-agent@npm:5.0.1"
+  dependencies:
+    agent-base: "npm:6"
+    debug: "npm:4"
+  checksum: 10c0/6dd639f03434003577c62b27cafdb864784ef19b2de430d8ae2a1d45e31c4fd60719e5637b44db1a88a046934307da7089e03d6089ec3ddacc1189d8de8897d1
   languageName: node
   linkType: hard
 
@@ -4055,12 +4072,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:~7.7.4":
-  version: 7.7.4
-  resolution: "semver@npm:7.7.4"
+"semver@npm:~7.8.0":
+  version: 7.8.4
+  resolution: "semver@npm:7.8.4"
   bin:
     semver: bin/semver.js
-  checksum: 10c0/5215ad0234e2845d4ea5bb9d836d42b03499546ddafb12075566899fc617f68794bb6f146076b6881d755de17d6c6cc73372555879ec7dce2c2feee947866ad2
+  checksum: 10c0/81b7c296fd7927b80f67fa516b75fa1017caac8167795320de28e76ccbc6f7f01763c30ecd10d6a0d8fd089708ab0548a5aebb94b0870e99c2a2b4600a46389b
   languageName: node
   linkType: hard
 
