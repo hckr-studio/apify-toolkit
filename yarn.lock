@@ -503,7 +503,7 @@ __metadata:
   dependencies:
     "@thi.ng/atom": "npm:5.3.67"
   peerDependencies:
-    apify: 3.7.2
+    apify: ">=3.7.0"
   languageName: unknown
   linkType: soft
 
