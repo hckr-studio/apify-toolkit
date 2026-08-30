@@ -576,7 +576,7 @@ __metadata:
     "@fast-csv/parse": "npm:5.0.7"
     "@hckr_/apify-keboola": "npm:1.1.1"
     apify: "npm:3.7.2"
-    apify-cli: "npm:1.8.0"
+    apify-cli: "npm:1.9.0"
   languageName: unknown
   linkType: soft
 
@@ -586,7 +586,7 @@ __metadata:
   dependencies:
     "@fast-csv/format": "npm:5.0.7"
     apify: "npm:3.7.2"
-    apify-cli: "npm:1.8.0"
+    apify-cli: "npm:1.9.0"
     byte-size: "npm:9.0.1"
     node-gzip: "npm:1.1.2"
   languageName: unknown
@@ -1243,9 +1243,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apify-cli@npm:1.8.0":
-  version: 1.8.0
-  resolution: "apify-cli@npm:1.8.0"
+"apify-cli@npm:1.9.0":
+  version: 1.9.0
+  resolution: "apify-cli@npm:1.9.0"
   dependencies:
     "@apify/actor-memory-expression": "npm:^0.2.0"
     "@apify/actor-templates": "npm:^0.1.5"
@@ -1266,7 +1266,7 @@ __metadata:
     "@skyra/jaro-winkler": "npm:^1.1.1"
     adm-zip: "npm:~0.6.0"
     ajv: "npm:~8.20.0"
-    apify-client: "npm:^2.23.3"
+    apify-client: "npm:^2.25.0"
     archiver: "npm:~8.0.0"
     axios: "npm:^1.15.0"
     chalk: "npm:~6.0.0"
@@ -1298,7 +1298,7 @@ __metadata:
     actor: ./dist/actor.js
     apify: ./dist/apify.js
     apify-cli: ./dist/apify.js
-  checksum: 10c0/8b89c547beb72cbe82416ef183b862555ca816edbe5fce71369915f17cc7196c97a70d0cbcf1ed788960a1423ca0d9a49047f49acd76bb664b6627e92091c1d1
+  checksum: 10c0/7fc4b565ab7c0810db63cbbc988a6601fcc284ba14934e1636411de4265fac3f2f044eb9ead1aff79efeac0971a6dada06a7192ec2d0a146b65115c11c4dad9c
   languageName: node
   linkType: hard
 
@@ -1321,9 +1321,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apify-client@npm:^2.23.3":
-  version: 2.23.4
-  resolution: "apify-client@npm:2.23.4"
+"apify-client@npm:^2.25.0":
+  version: 2.25.0
+  resolution: "apify-client@npm:2.25.0"
   dependencies:
     "@apify/consts": "npm:^2.50.0"
     "@apify/log": "npm:^2.2.6"
@@ -1337,7 +1337,7 @@ __metadata:
     proxy-agent: "npm:^6.5.0"
     tslib: "npm:^2.5.0"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/b6a1a8abc85d00ea5af55d097bdc6c8d33a9edd0d96e1c776585f6536d0327b67285fd6b5131298a40f179546a7ee1cb9d08e6d7be110b123c649200e6054846
+  checksum: 10c0/392d81391d2d07dbca47b31743e814544ea003c4577c01a643be941f8134c780e4a23e1ecb00db6235fbc12c4b274b4d1b781665ee5797fc4a91824cbbd505eb
   languageName: node
   linkType: hard
 
