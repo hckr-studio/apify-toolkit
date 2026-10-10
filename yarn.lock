@@ -496,12 +496,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fast-csv/format@npm:5.0.7":
-  version: 5.0.7
-  resolution: "@fast-csv/format@npm:5.0.7"
-  dependencies:
-    lodash.escaperegexp: "npm:^4.1.2"
-  checksum: 10c0/0553cbdac921ce2c33438e301582777314c0fc0044276ef436cb497cd8e9067928799e5dbe6b730e5f71fc076a2ead66479cf69388d3ebef9780b6c19343d448
+"@fast-csv/format@npm:5.0.8":
+  version: 5.0.8
+  resolution: "@fast-csv/format@npm:5.0.8"
+  checksum: 10c0/727d8a5a0944582ad4528c03617f08ba9cdbc9d2a84942199fb6a1b1bd409bdde60c323cc2435a0c6521ab46674c6f0aa992edd5bdaadd3a7b8326b7946fa821
   languageName: node
   linkType: hard
 
@@ -584,7 +582,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr_/keboola-uploader@workspace:actors/keboola-uploader"
   dependencies:
-    "@fast-csv/format": "npm:5.0.7"
+    "@fast-csv/format": "npm:5.0.8"
     apify: "npm:3.7.2"
     apify-cli: "npm:1.10.0"
     byte-size: "npm:9.0.1"
