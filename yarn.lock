@@ -517,14 +517,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fast-csv/parse@npm:5.0.7":
-  version: 5.0.7
-  resolution: "@fast-csv/parse@npm:5.0.7"
-  dependencies:
-    lodash.escaperegexp: "npm:^4.1.2"
-    lodash.groupby: "npm:^4.6.0"
-    lodash.uniq: "npm:^4.5.0"
-  checksum: 10c0/4e3823f3b78cb96818b776edb69f247812d6323eb52843251017a4077db8df044c5825e093ec4984a7d80a114311527d9a0110caf43195a22a83a894eab35d1e
+"@fast-csv/parse@npm:5.0.8":
+  version: 5.0.8
+  resolution: "@fast-csv/parse@npm:5.0.8"
+  checksum: 10c0/9a0406dd2b7182b62af69768a4fe140957cf8eb8dc41264142a05486b6d036d038b6af97d0ff79e827358da7354c862607b4ed92ad956e923b59169f10647428
   languageName: node
   linkType: hard
 
@@ -544,7 +540,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr_/apify-keboola@workspace:packages/keboola"
   dependencies:
-    "@fast-csv/parse": "npm:5.0.7"
+    "@fast-csv/parse": "npm:5.0.8"
     "@thi.ng/atom": "npm:5.3.70"
   languageName: unknown
   linkType: soft
@@ -571,7 +567,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr_/keboola-igniter@workspace:actors/keboola-igniter"
   dependencies:
-    "@fast-csv/parse": "npm:5.0.7"
+    "@fast-csv/parse": "npm:5.0.8"
     "@hckr_/apify-keboola": "npm:1.1.1"
     apify: "npm:3.7.2"
     apify-cli: "npm:1.10.0"
