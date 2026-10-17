@@ -609,7 +609,7 @@ __metadata:
     "@fast-csv/format": "npm:5.0.8"
     apify: "npm:3.7.2"
     apify-cli: "npm:1.10.0"
-    byte-size: "npm:9.0.1"
+    byte-size: "npm:9.0.2"
     node-gzip: "npm:1.1.2"
   languageName: unknown
   linkType: soft
@@ -1591,15 +1591,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"byte-size@npm:9.0.1":
-  version: 9.0.1
-  resolution: "byte-size@npm:9.0.1"
+"byte-size@npm:9.0.2":
+  version: 9.0.2
+  resolution: "byte-size@npm:9.0.2"
   peerDependencies:
     "@75lb/nature": "*"
   peerDependenciesMeta:
     "@75lb/nature":
       optional: true
-  checksum: 10c0/0d97d7444a6d4ceb733fe863098417814487fee9a77a8584312566d1990201abcdf0a353085385c775074bb3e2867c1f97f2ca66b0483031af268bdb7403e2ed
+  checksum: 10c0/1dc690aea7103ddf180222da5e5916d020b2c60d00269a69ea37d827587b038f797b21c9d63634653740654142cfa0fa1c5707ee5871d191d663a8c3a1824359
   languageName: node
   linkType: hard
 
