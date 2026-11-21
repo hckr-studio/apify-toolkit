@@ -8,7 +8,7 @@
     "actors/*",
     "packages/*"
   ],
-  "packageManager": "yarn@4.18.1",
+  "packageManager": "yarn@4.19.0",
   "devDependencies": {
     "dprint": "0.65.0"
   }
